@@ -1,0 +1,613 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#main{
+ 
+}
+
+
+
+#header{
+  width: 100%;
+  height: 46px;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav li{
+    display: inline-block;
+    
+    position:relative;
+    line-height: 46px;
+}
+
+
+#nav>li>a{
+    text-transform: uppercase;
+    padding: 0 24px;
+}
+
+#nav li a{
+    color:#fff;
+    text-decoration: none;
+}
+
+
+#nav>li:hover{
+    background-color: #ccc;
+}
+
+#nav>li:hover>a{
+    color:#000;
+}
+
+#nav .subnav{
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background-color: #fff;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover{
+    background-color: #ccc;
+    display: block;
+}
+
+#nav.subnav>li{
+    display: block;
+    padding: -4px 0 -4px 0;
+}
+
+#nav .subnav a{
+    color: #000;
+    padding: 0 20px;
+}
+
+.icon{
+    font-size: 12px;
+}
+
+
+#header .font{
+    color: #fff;
+    float: right;
+    line-height: 46px;
+    padding: 0 21px;
+    
+}
+
+#header .font:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+
+
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+ background-image: url("https://www.w3schools.com/w3images/chicago.jpg");
+ background-size:cover ;
+position: relative;
+
+}
+
+#slider .slider-text{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    text-align: center;
+  width: 100%;
+    
+}
+
+#slider #text1{
+    margin: 15px 0;
+}
+
+
+
+
+#content{
+    padding:64px 16px;
+    margin:0 15%;
+    
+}
+#content #content1{
+   display: block;
+    width: 100%;
+   
+}
+
+#content1 #ct1{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+   margin:10px 0;
+}
+
+#content1 #ct2{
+    width: 100%;
+    text-align: center; 
+    margin:15px 0 15px 0;
+    color:rgba(0,0,0,0.4)
+}
+
+#content1 #ct3{
+    
+    margin:15px 0;
+    padding-left:50px ;
+    padding-right: 50px;
+}
+
+#content1>#ct3>p{
+    
+    text-align: justify;
+}
+
+#content1 #ct4{
+    padding: 32px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#content1 #ct4 #name-boss{
+    display: inline-block;
+
+    
+}
+#content #ct4 .name{
+    display: inline-block ;
+    margin: 0 52px;
+    
+}
+#content #ct4 .name p{
+    padding:15px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#content #ct4 .name img{
+    border-radius: 5px;
+    width: 150px;
+    height: 152px;
+   object-fit:full;
+    box-sizing: border-box;
+    
+}
+
+#content-boss{
+    
+    background-color: #000;
+    
+}
+
+#content-boss>#tour{
+
+    padding: 64px 10px;
+    margin:0 15%;
+   
+}
+
+#content-boss #tour #to1{
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+   margin:10px 0;
+}
+
+#content-boss #tour #to2{
+    width: 100%;
+    text-align: center; 
+    margin:15px 0 15px 0;
+    color:rgba(226, 219, 219, 0.4)
+}
+
+
+
+
+#tour #ticket{
+   
+    margin-top: 50px;
+    width: 100%;
+  
+
+  
+}
+#tour #ticket>#bor-tic{
+
+    
+}
+
+#tour #ticket .tic{
+
+    padding: 0 16px;
+    list-style-type: none;
+    line-height: 40px;
+    border-width: 0.3px ;
+    border-style: solid;
+    border-color: rgb(141, 135, 135);
+    color: rgb(116, 107, 107);
+    background-color: #fff;
+}
+
+#ticket .tic .number{
+    font-size: 15px;
+    line-height: 25px;
+    
+    margin-left: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0 5px;
+    background-clip: padding-box;
+    background-color: #f44336;
+    color: #fff;
+}
+
+#ticket .tic .number-a{
+    line-height: 24px;
+    text-align: center;
+    margin-top:10px ;
+    color: #fff;
+    float:right;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    border-radius: 50%;
+    
+}
+
+#buy-tic{
+    
+    margin: 0 16px;
+    padding: 32px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#tour #bor-buy{
+display: inline-block;
+ 
+}
+
+#buy-tic .buy{
+    height: 390px;
+    width: 246px;
+    display: inline-block;
+    background-color: #fff;
+    padding-left:8px ;
+    padding-right: 8px;
+    margin: 0 5px 16px 5px;
+}
+
+
+
+#buy-tic .buy .city{
+    width: 246px;
+    height: 188px;
+   object-fit: fill;
+   margin-left: -8px;
+}
+
+#buy-tic .buy .nci{
+     font-size: 15px;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+#buy-tic .buy .time{
+    font-size: 15px;
+    color: rgb(133, 122, 122);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#buy-tic .buy .nd{
+ margin-top: 15px;
+ margin-bottom: 15px;
+ font-size: 15px;
+}
+
+#buy-tic .buy .put{
+    margin-top: 15px;
+    border-radius: 4px;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: black;
+    background-clip: padding-box;
+    border:0.5px;
+    cursor: pointer;
+}
+
+#buy-tic .buy .put:hover{
+    
+    background-color: #ccc;
+    background-clip: padding-box;
+}
+
+#buy-tic .buy .put:hover h5{
+    color: black;
+}
+
+
+
+#contact{
+    padding: 64px 16px;
+    height: 460px;
+    background-color: #fff;
+    margin: 0 19%;
+}
+
+
+#contact #conc{
+    text-align: center;
+}
+
+#contact #conc #ctc1{
+    font-size: 20px;
+ margin: 10px 0;
+}
+
+#contact #conc #ctc2{
+ margin: 15px 0;
+}
+
+#contact #std{
+    padding: 32px 0;
+}
+
+#contact #std #a1{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+#contact #std .ll{
+    font-size: 20px;
+    line-height: 1.5;
+}
+#a2{
+    float:inline-start;
+    float: right;
+    display:inline-block;
+}
+
+#a2 .size{
+    padding: 8px;
+}
+
+#a2 #size1,#a2 #size2{
+    padding: 0px 8px;
+}
+
+#a2 #size-top{
+    margin-bottom: 8px;
+}
+
+#a2 #size3{
+    padding:0px 8px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+#a2 #size3 #size-bottom{
+    width: 100%;
+   
+    box-sizing: border-box;
+    
+}
+
+#send{
+    margin-top: 8px;
+    font-size: 15px;
+    padding: 10px 15px;
+    float: right;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    background-color: black;
+    background-clip: padding-box;
+    border-radius: 3px;
+}
+
+#send:hover{
+    background-color: #ccc;
+    color:#000
+
+}
+
+#i-footer{
+    padding-top: 56%;
+    background-image:url('https://www.w3schools.com/w3images/map.jpg');
+    background-size: cover;
+   
+}
+
+
+
+
+#footer{
+  padding: 64px 0px;
+}
+
+#footer #footer-h{
+   
+    text-align: center;
+}
+
+#footer .ti-facebook{
+  font-size: 20px;
+}
+
+#footer .ti-apple{font-size: 20px;}
+
+#footer .ti-instagram{font-size: 20px;}
+
+#footer .ti-pinterest-alt{font-size: 20px;}
+
+#footer .ti-twitter-alt{font-size: 20px;}
+
+#footer .ti-linkedin{font-size: 20px;}
+
+#footer #footer-e{
+    text-align: center;
+    margin: 15px 0px;
+}
+#footer #footer-e p{
+    font-size: 15px;
+    color: rgb(85, 82, 82);
+}
+
+#footer #footer-e p a{
+    color: rgb(85, 82, 82);
+}
+
+
+.modal{
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0,0,0,0.5) ;
+    
+    justify-content: center;
+    display: none;
+   
+}
+
+.open{
+    display: flex;
+   z-index: 1;
+}
+
+.modal #modal-container{
+  height: 450px;
+    width: 60%;
+    background-color: #fff;
+    animation: modalFaceIn ease 0.5s;
+}
+
+
+#modal-container #modal-head{
+    background-color: rgb(0,150,136);
+    padding: 32px 16px;
+    position: relative;
+   height: 128px;
+   text-align: center;
+}
+#modal-container #modal-head #auto{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding:15px ;
+}
+
+#modal-container #modal-head #auto:hover{
+    background-color:#ccc ;
+    
+}
+
+#modal-container #modal-head #auto:hover .ti-close{
+    color: #000;
+}
+#modal-head #auto .ti-close{
+
+
+    color: #fff;
+    font-size: 13px;
+}
+
+#modal-head #auto2 {
+    font-size: 30px;
+    line-height: 64px;
+    color: #fff;
+}
+
+#modal-head #auto2 .ti-bag{
+    margin-right: 3px;
+}
+
+#modal-head #auto2>span{
+  margin-left: 3px;
+}
+
+
+.modal #modal-body-line1,.modal #modal-body-line3{
+    padding: 15px 0px 15px 15px;
+}
+
+.modal #modal-body-line2 input,.modal #modal-body-line4 input{
+    padding: 10px 0px;
+  
+}
+
+.modal #modal-body-line2 .input-modal,.modal #modal-body-line4 .input-modal{
+    width: 100%;
+
+}
+
+.modal #modal-body-line2 ,.modal #modal-body-line4{
+    padding: 0px 15px;
+}
+
+.modal #modal-body-line5{
+    margin-top: 20px;
+    height: 50px;
+    text-align: center;
+    padding: 0px 15px;
+   
+}
+
+.modal #modal-body-line5 div{
+    background-color: rgb(0,150,136);
+  line-height: 50px;
+  color: #fff;
+}
+
+.modal #modal-body-line5 div:hover{
+    background-color: #ccc;
+    color:#000;
+}
+
+.modal #modal-body-line6{
+    text-align: right;
+    margin-top: 35px;
+    padding-right: 20px;
+}
+
+.modal #modal-body-line6 a{
+    color: rgb(33,150,243);
+}
+
+@keyframes modalFaceIn{
+    from{
+      transform:  translateY(-150px);
+    }
+    to{
+      transform: translate(0);
+    }
+}
+

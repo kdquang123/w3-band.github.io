@@ -1,0 +1,15 @@
+
+/*Tablet*/
+
+@media (max-width:65em ) and (min-width:40em){
+  #main{
+    display: none;
+  }
+}
+
+/*Mobile*/
+
+@media (max-width: 740px){
+
+   
+}
